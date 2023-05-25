@@ -42,6 +42,14 @@ body {
     font-size: 2rem;
 }
 
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+}
 
 .Section1 {
     width: 100%;
@@ -62,7 +70,11 @@ body {
     grid-row: 4/5;
     grid-column: 2/5;
     border-radius: 1rem;
+    font-size: 2rem;
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-regular);
 }
+
 
 .slogan {
     grid-row: 3/5;
@@ -93,19 +105,51 @@ body {
     grid-column: 1 / 6;
     grid-row: 1 / 8;
     display: flex;
+    background: blue;
 }
 
-.IMGGPU {
-    width: 100%;
+.card--first > img{
+    width: 77.2rem;
 }
+
 
 .card--second {
     grid-column: 6 / 12;
     grid-row: 1 / 8;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    font-size: 2rem;
+    padding: 4rem;
+    gap: 1rem;
+}
+
+
+.moreText {
+    display: none;
+}
+.read-more-btn {
+    padding: 15px 60px;
+    background-color: rgb(149, 170, 197);
+    color: rgb(53, 49, 49);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.text.show-more .moreText {
+    display: inline;
+}
+.text.show-more .dots {
+    display: none;
+}
+
+.card--second > button{
+    width: 15rem;
+    height: 7rem;
+    background: #FFB4B4;
+    border: #0000a4;
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-regular);
 }
 
 .card--third {

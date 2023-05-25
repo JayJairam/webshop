@@ -25,3 +25,17 @@ for (let i = 0; i < arrowButtons.length; i++) {
 
     }
 }
+
+//Button read more
+const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+
+readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+        readMoreBtn.innerText = "Read Less";
+    } else {
+        readMoreBtn.innerText = "Read More";
+    }
+});
