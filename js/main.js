@@ -39,3 +39,74 @@ readMoreBtn.addEventListener("click", (e) => {
         readMoreBtn.innerText = "Read More";
     }
 });
+
+
+
+
+//filter
+
+let allVideocards = document.getElementsByClassName("videocard");
+let filters = document.getElementsByClassName("filter");
+
+for(let i = 0; i < filters.length; i++){
+    filters[i].checked = true;
+}
+
+
+//Nvidia filter 
+let NvideaFilter = document.getElementById("checkbox-Nvidia");
+NvideaFilter.onchange = function () {
+    if (NvideaFilter.checked === true) {
+        for (let i = 0; i < allVideocards.length; i++) {
+            if (allVideocards[i].dataset.category === "Nvidia") {
+                allVideocards[i].style.display = "block";
+            }
+        }
+    }
+    else {
+        for (let i = 0; i < allVideocards.length; i++) {
+            if (allVideocards[i].dataset.category === "Nvidia") {
+                allVideocards[i].style.display = "none";
+            }
+        }
+    }
+}
+
+
+//AMD filter
+let AMDFilter = document.getElementById("checkbox-AMD");
+AMDFilter.onchange = function () {
+    if (AMDFilter.checked === true) {
+        for (let i = 0; i < allVideocards.length; i++) {
+            if (allVideocards[i].dataset.category === "AMD") {
+                allVideocards[i].style.display = "block";
+            }
+        }
+    }
+    else {
+        for (let i = 0; i < allVideocards.length; i++) {
+            if (allVideocards[i].dataset.category === "AMD") {
+                allVideocards[i].style.display = "none";
+            }
+        }
+    }
+}
+
+//Intel filter
+let IntelFilter = document.getElementById("checkbox-Intel");
+IntelFilter.onchange = function () {
+    if (IntelFilter.checked === true) {
+        for (let i = 0; i < allVideocards.length; i++) {
+            if (allVideocards[i].dataset.category === "Intel") {
+                allVideocards[i].style.display = "block";
+            }
+        }
+    }
+    else {
+        for (let i = 0; i < allVideocards.length; i++) {
+            if (allVideocards[i].dataset.category === "Intel") {
+                allVideocards[i].style.display = "none";
+            }
+        }
+    }
+}
