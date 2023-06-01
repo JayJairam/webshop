@@ -170,6 +170,18 @@ a:link {
     gap: 1rem;
 }
 
+.card-main>a > button{
+    background: #0000a4;
+    color: white;
+    border: yellow;
+    width: 12rem;
+    height: 3rem;
+}
+
+.card-main>a > button:hover{
+    cursor: pointer;
+}
+
 .imgshowcase {
     width: 40rem;
     height: 30rem;
@@ -200,7 +212,7 @@ a:link {
     background: #ff6666;
 }
 
-/*Producten section SALES */
+/*Producten section stappenplan */
 .Section2 {
     background: #0000a4;
     width: 100%;
@@ -211,11 +223,12 @@ a:link {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
+    font-size: 1rem;
 }
 
 .section2-showcase {
-    width: 10rem;
-    height: 10rem;
+    width: 40rem;
+    height: 40rem;
 }
 
 .card--first1 {
@@ -224,8 +237,14 @@ a:link {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    flex-direction: column;
 }
 
+.card--first1 > img{
+    width: 30rem;
+    height: 30rem;
+}
 
 .card--second1 {
     grid-row: 1 / 5;
@@ -233,6 +252,14 @@ a:link {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    flex-direction: column;
+   
+}
+
+.card--second1 > img{
+    width: 30rem;
+    height: 30rem;
 }
 
 .card--third1 {
@@ -241,6 +268,13 @@ a:link {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    flex-direction: column;
+}
+
+.card--third1 > img{
+    width: 30rem;
+    height: 30rem;
 }
 
 .card--fourth1 {
@@ -249,7 +283,16 @@ a:link {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    flex-direction: column;
 }
+
+.card--fourth1 > img{
+    width: 30rem;
+    height: 30rem;
+}
+
+
 
 /*Producten Product info */
 .Section3 {
@@ -363,12 +406,106 @@ a:link {
 
 
 /*Footer */
-.footer {
-    width: 100%;
-    height: 20rem;
-    background: palegreen;
+footer{
+    background: white;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: black;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: black;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: black;
+    border: 1.1px solid white;
+    padding: 5px;
+    border: #0000a4;
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: yellow;
 }
 
+.footer-bottom{
+    background: #0000a4;
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+    color: yellow;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:yellow;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: yellow;
+}
 
 
 
@@ -396,6 +533,13 @@ a:link {
     }
 }
 
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    }
 
 
 
@@ -491,4 +635,10 @@ a:link {
 .videocard > p{
     padding-top: 1rem;
     padding-bottom: 2rem;
+}
+
+.zwarte-balk{
+    width: 100%;
+    height: 5rem;
+    background: black;
 }
