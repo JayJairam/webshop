@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+    <script src="js/filter.js" defer></script>
     <title>Videokaarten</title>
 </head>
 
@@ -22,7 +22,7 @@
             </a>
         </div>
     </header>
-    <!--Breath in -->
+    <!--Filter -->
     <main>
         <section class="inputs">
             <div>
@@ -40,8 +40,9 @@
                 <label for="checkbox-Intel" class="label">Intel</label>
             </div>
         </section>
-        <ul class="Videocards" data-catogory="Nvidia">
-            <li class="videocard">
+        <!--producten-->
+        <ul class="Videocards" >
+            <li class="videocard" data-category="Nvidia">
                 <img src="img/gpu1.webp" alt="">
                 <h2>RTX Nvidea</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -53,7 +54,51 @@
                 <button>BUY</button>
             </li>
 
-            <li class="videocard" data-catogory="AMD">
+            <li class="videocard" data-category="AMD">
+                <img src="img/gpu2.webp" alt="">
+                <h2>RTX Nvidea</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
+                    ex inventore omnis molestiae odit perspiciatis
+                    obcaecati ab dolorem quasi quo.
+                    Ad, quaerat?
+                </p>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Intel">
+                <img src="img/intelgpu.webp" alt="">
+                <h2>RTX Nvidea</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
+                    ex inventore omnis molestiae odit perspiciatis
+                    obcaecati ab dolorem quasi quo.
+                    Ad, quaerat?
+                </p>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="AMD">
+                <img src="img/gpu2.webp" alt="">
+                <h2>RTX Nvidea</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
+                    ex inventore omnis molestiae odit perspiciatis
+                    obcaecati ab dolorem quasi quo.
+                    Ad, quaerat?
+                </p>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Intel">
+                <img src="img/intelgpu.webp" alt="">
+                <h2>RTX Nvidea</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
+                    ex inventore omnis molestiae odit perspiciatis
+                    obcaecati ab dolorem quasi quo.
+                    Ad, quaerat?
+                </p>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Nvidia">
                 <img src="img/gpu1.webp" alt="">
                 <h2>RTX Nvidea</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -64,8 +109,8 @@
                 </p>
                 <button>BUY</button>
             </li>
-            <li class="videocard" data-catogory="Intel">
-                <img src="img/gpu1.webp" alt="">
+            <li class="videocard" data-category="AMD">
+                <img src="img/gpu2.webp" alt="">
                 <h2>RTX Nvidea</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
@@ -75,51 +120,7 @@
                 </p>
                 <button>BUY</button>
             </li>
-            <li class="videocard" data-catogory="AMD">
-                <img src="img/gpu1.webp" alt="">
-                <h2>RTX Nvidea</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
-                    ex inventore omnis molestiae odit perspiciatis
-                    obcaecati ab dolorem quasi quo.
-                    Ad, quaerat?
-                </p>
-                <button>BUY</button>
-            </li>
-            <li class="videocard" data-catogory="Intel">
-                <img src="img/gpu1.webp" alt="">
-                <h2>RTX Nvidea</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
-                    ex inventore omnis molestiae odit perspiciatis
-                    obcaecati ab dolorem quasi quo.
-                    Ad, quaerat?
-                </p>
-                <button>BUY</button>
-            </li>
-            <li class="videocard" data-catogory="Nvidia">
-                <img src="img/gpu1.webp" alt="">
-                <h2>RTX Nvidea</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
-                    ex inventore omnis molestiae odit perspiciatis
-                    obcaecati ab dolorem quasi quo.
-                    Ad, quaerat?
-                </p>
-                <button>BUY</button>
-            </li>
-            <li class="videocard" data-catogory="AMD">
-                <img src="img/gpu1.webp" alt="">
-                <h2>RTX Nvidea</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum iusto, aperiam modi similique pariatur enim saepe temporibus
-                    ex inventore omnis molestiae odit perspiciatis
-                    obcaecati ab dolorem quasi quo.
-                    Ad, quaerat?
-                </p>
-                <button>BUY</button>
-            </li>
-            <li class="videocard" data-catogory="Nvidea">
+            <li class="videocard" data-category="Nvidia">
                 <img src="img/gpu1.webp" alt="">
                 <h2>RTX Nvidea</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -135,9 +136,6 @@
     <footer class="footer">
         <h1>ik ben footer</h1>
     </footer>
-
-
-
 
 
 </body>
