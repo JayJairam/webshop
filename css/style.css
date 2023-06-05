@@ -58,9 +58,6 @@ a:link {
     height: 50rem;
     background-image: url('../img/background.webp');
     color: white;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
 }
 
 
@@ -69,21 +66,28 @@ a:link {
     height: 10rem;
     background: #e9ed11;
     border: #0000a4;
-    grid-row: 4/5;
-    grid-column: 2/5;
     border-radius: 1rem;
     font-size: 2rem;
     font-family: var(--font-family-base);
     font-weight: var(--font-weight-regular);
 }
 
+.Herosection--button{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+
+.knopSection1:hover{
+    cursor: pointer;
+}
+
 
 .slogan {
-    grid-row: 3/5;
-    grid-column: 2/5;
     font-size: 3rem;
-    position: relative;
-    top: 6rem;
+    position: absolute;
+    top: 40%;
+    left: 20%;
 }
 
 /*Producten section 2 met txt en 4 prodcten */
@@ -160,6 +164,7 @@ a:link {
     align-items: center;
     color: rgb(53, 49, 49);
 }
+
 
 .card-main {
     display: flex;
@@ -239,6 +244,7 @@ a:link {
     align-items: center;
     background: white;
     flex-direction: column;
+    font-size: 1rem;
 }
 
 .card--first1 > img{
@@ -254,7 +260,6 @@ a:link {
     align-items: center;
     background: white;
     flex-direction: column;
-   
 }
 
 .card--second1 > img{
@@ -410,7 +415,7 @@ footer{
     background: white;
     height: auto;
     width: 100vw;
-    padding-top: 40px;
+    padding-top: 40rem;
     color: black;
 }
 .footer-content{
