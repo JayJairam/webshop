@@ -1,13 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dropdownfilter.js" defer></script>
+    <title>Videokaarten</title>
+    <link rel="icon" type="images/x-icon" href="img/uxd-Jay-Jairam.png" />
 </head>
+
 <body>
-    <h2>dwqfdqffqf</h2>
+    <header class="header">
+        <a href="index.html"><img class="logo" src="img/uxd-Jay-Jairam.png" alt="logo van het bedrijf"></a>
+        <div class="ProductPagina">
+            <a href="product1.html">
+                <h2 class="headertext"> Videokaarten</h2>
+            </a>
+            <a href="product2.html">
+                <h2 class="headertext">processor</h2>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!--Filter -->
+        <section class="filter--dorpdown">
+            <div class="dropdown">
+                <button class="dropbtn">Prijs ↓ </button>
+                <div class="dropdown-content">
+                    <section class="inputs">
+                        <div>
+                            <input id="checkbox-Nvidia" type="checkbox" class="filter">
+                            <label for="checkbox-Nvidia" class="label">€100-€400</label>
+                        </div>
+
+                        <div>
+                            <input id="checkbox-AMD" type="checkbox" class="filter">
+                            <label for="checkbox-AMD" class="label">€400-€800</label>
+                        </div>
+
+                        <div>
+                            <input id="checkbox-Intel" type="checkbox" class="filter">
+                            <label for="checkbox-Intel" class="label">over €800</label>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+
+        <!--producten-->
+        <ul class="Videocards">
+            <li class="videocard" data-category="Nvidia">
+                <img src="img/cpu's/cpu--amd1.webp" alt="">
+                <h2>AMD Ryzen 9 5900X</h2>
+                <p>De AMD Ryzen 9 5900X processor, codenaam "Vermeer",
+                    is gebaseerd op de Zen3 architectuur.
+                    De cpu beschikt over twaalf cores en vierentwintig threads,
+                    en is geschikt om op een moederbord met Socket AM4 te plaatsen.
+                </p>
+                <h2>€100</h2>
+                <button>BUY</button>
+            </li>
+
+            <li class="videocard" data-category="AMD">
+                <img src="img/cpu's/cpu--intel1.webp" alt="">
+                <h2>Intel Core i9 13900K </h2>
+                <p>De Intel® Core i9-13900K, codenaam "Raptor Lake",
+                    beschikt over 8 Performance cores en 16 Efficiency cores en is geschikt
+                    om op een moederbord met Socket 1700 te plaatsen.
+                </p>
+                <h2>€400</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Intel">
+                <img src="img/cpu's/cpu--FuJitsu1.webp" alt="">
+                <h2>Fujitsu Intel Xeon Gold 6326</h2>
+                <p>
+                    Alleen beschikbaar voor bedrijfen met een speciaal cerificaat
+                </p>
+                <h2>€800</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="AMD">
+                <img src="img/cpu's/cpu--amd2.webp" alt="">
+                <h2>AMD Ryzen 7 7700X </h2>
+                <p>De AMD Ryzen 7 7700x beschikt over 8 Cores,
+                    24 Threads, 40MB Cache, een coreclock van 4,5 GHZ en een boostclock tot 5,4 GHZ.
+                    Deze CPU uit de nieuwe Zen 4 serie codenaam:
+                    "Raphael AM5" is de nieuwe norm voor mid-range gaming systemen.
+                </p>
+                <h2>€500</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Intel">
+                <img src="img/cpu's/cpu--intel2.webp" alt="">
+                <h2>Intel Core i5 13600KF</h2>
+                <p>De Intel® i5-13600KF, onderdeel van de
+                    "Raptor Lake" familie van Intel Processors,
+                    beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt voor elk moederbord met een
+                    Socket 1700.
+                </p>
+                <h2>€1100</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Nvidia">
+                <img src="img/cpu's/cpu--FuJitsu1.webp" alt="">
+                <h2> Fujitsu Intel Xeon Platinum 8380HL</h2>
+                <p>
+                    Alleen beschikbaar voor bedrijfen met een speciaal cerificaat
+                </p>
+                <h2>€200</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="AMD">
+                <img src="img/cpu's/cpu--amd3.webp" alt="">
+                <h2>AMD Ryzen 7 5800X</h2>
+                <p>De AMD Ryzen 7 5800X processor, codenaam "Vermeer",
+                    is gebaseerd op de nieuwe Zen3 architectuur.
+                    De cpu beschikt over acht cores/16 threads,
+                    en is geschikt om op een moederbord met Socket AM4 te plaatsen.
+                </p>
+                <h2>€600</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Nvidia">
+                <img src="img/cpu's/cpu--intel3.webp" alt="">
+                <h2>Intel Core i7 13700K</h2>
+                <p>De Intel® Core™ i7-13700K, codenaam "Raptor Lake",
+                    beschikt over 8 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord
+                    met socket 1700 te plaatsen. De processor beschikt over 30 MB Smart cache en werkt op een snelheid
+                    van 3,4 GHz.
+                </p>
+                <h2>€300</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Intel">
+                <img src="img/cpu's/cpu--FuJitsu1.webp" alt="">
+                <h2>Fujitsu Intel Xeon Platinum 8360HL</h2>
+                <p>
+                    Alleen beschikbaar voor bedrijfen met een speciaal cerificaat
+                </p>
+                <h2>€1300</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="AMD">
+                <img src="img/cpu's/cpu--amd4.webp" alt="">
+                <h2>AMD Ryzen 5 5600G</h2>
+                <p>De AMD Ryzen 5 5600G processor, codenaam "Cezanne",
+                    is gebaseerd op de Zen 3 architectuur.
+                    De APU beschikt over zes cores/twaalf threads,
+                    en is geschikt om op een moederbord met Socket AM4 te plaatsen.
+                </p>
+                <h2>€700</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Nvidia">
+                <img src="img/cpu's/cpu--intel4.webp" alt="">
+                <h2>Intel Core i3-13100</h2>
+                <p>De Intel Core i3-13100, Raptor Lake genaamd, 
+                    brengt een nieuwe chiplay-out met verschillende CPU-kernen voor verschillende toepassingsscenario's. 
+                    De Performance Cores leveren prestaties voor rekenintensieve toepassingen.
+                </p>
+                <h2>€400</h2>
+                <button>BUY</button>
+            </li>
+            <li class="videocard" data-category="Intel">
+                <img src="img/cpu's/cpu--FuJitsu1.webp" alt="">
+                <h2>Fujitsu Intel Xeon Gold 5320H</h2>
+                <p>
+                    Alleen beschikbaar voor bedrijfen met een speciaal cerificaat
+                </p>
+                <h2>€2100</h2>
+                <button>BUY</button>
+            </li>
+        </ul>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-content">
+            <h3>Footer</h3>
+            <p>Jainarain's webshop over computer onderdelen. Disclaimer education purpose only.</p>
+            <img src="img/bestelstappen.webp" alt="">
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur recusandae temporibus,
+                cum consequuntur tenetur illum praesentium quidem odit,
+                quibusdam molestiae distinctio sunt,
+                architecto eveniet in quam corrupti. Velit, qui natus!</p>
+
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+            <img src="img/betaalgegevensn.webp" alt="">
+
+        </div>
+        <div class="footer-bottom">
+            <p>copyright © <a href="#">Jainarain Jairam </a> </p>
+            <div class="footer-menu">
+                <ul class="f-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
 </body>
+
 </html>
