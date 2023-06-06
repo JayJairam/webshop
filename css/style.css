@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+:root{
+    
+}
+
 html {
     font-size: 62.5%;
 }
@@ -100,6 +105,7 @@ a:link {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(14, 1fr);
+    flex-wrap: wrap;
 }
 
 .card {
@@ -166,24 +172,32 @@ a:link {
 }
 
 
+
+
 .card-main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    object-fit: cover;
+    object-fit: contain;
     gap: 1rem;
 }
 
-.card-main>a > button{
+
+
+.card-main > a {
     background: #0000a4;
     color: white;
     border: yellow;
     width: 12rem;
     height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
-.card-main>a > button:hover{
+.card-main > a :hover{
     cursor: pointer;
 }
 
@@ -221,82 +235,32 @@ a:link {
 .Section2 {
     background: #0000a4;
     width: 100%;
-    height: 100rem;
+    height: 75rem;
     list-style: none;
     gap: 2rem;
     padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
 }
 
-.section2-showcase {
-    width: 40rem;
-    height: 40rem;
-}
-
-.card--first1 {
-    grid-column: 1 / 5;
-    grid-row: 1 / 5;
+.stappen{
+    width: 45rem;
+    height: 45rem;
+    background: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: white;
-    flex-direction: column;
-    font-size: 1rem;
+    gap: 5rem;
+    font-size: 1.2rem;
 }
 
-.card--first1 > img{
-    width: 30rem;
-    height: 30rem;
+.stappen img{
+    width: 20rem;
+    height: 20rem;
 }
-
-.card--second1 {
-    grid-row: 1 / 5;
-    grid-column: 6 / 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    flex-direction: column;
-}
-
-.card--second1 > img{
-    width: 30rem;
-    height: 30rem;
-}
-
-.card--third1 {
-    grid-column: 1/ 5;
-    grid-row: 5 / 9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    flex-direction: column;
-}
-
-.card--third1 > img{
-    width: 30rem;
-    height: 30rem;
-}
-
-.card--fourth1 {
-    grid-column: 6 / 10;
-    grid-row: 5 / 9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    flex-direction: column;
-}
-
-.card--fourth1 > img{
-    width: 30rem;
-    height: 30rem;
-}
-
 
 
 /*Producten Product info */
@@ -316,12 +280,40 @@ a:link {
 .card--first2 {
     grid-column: 1 / 4;
     grid-row: 1 / 6;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: dashed black;
+}
+
+.card--first2 > p{
+    padding-top: 2rem;
+    padding: 2rem;
+}
+
+.buy--button{
+    width: 25rem;
+    height: 10rem;
+    background: #e9ed11;
+    color: #0000a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
 }
 
 .card--second2 {
     grid-row: 1 / 6;
-    grid-column: 5 / 7;
+    grid-column: 4 / 6;
 }
+
+.card--second2 img{
+    width: 61.3rem;
+    height: 56rem;
+}
+
 
 
 /*Producten Reviews */
@@ -363,7 +355,7 @@ a:link {
 
 .review {
     width: 30rem;
-    min-height: 20rem;
+    height: 50rem;
     list-style: none;
     padding: 4rem;
     border-radius: 0.5;
@@ -376,9 +368,10 @@ a:link {
 }
 
 .reviewimg {
-    height: 14rem;
-    width: 15rem;
+    height: 20rem;
+    width: 20rem;
     padding: 1rem;
+    border-radius: 50%;
 }
 
 .review:nth-of-type(4),
@@ -399,12 +392,13 @@ a:link {
 .stars {
     color: gold;
     font-size: 2rem;
+    padding: 1rem;
 }
 
 .review p {
-    font-size: 120%;
+    font-size: 136%;
     font-style: italic;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     border-bottom: 0.5rem solid rgba(0, 0, 0, 0.2);
 }
 
@@ -415,7 +409,7 @@ footer{
     background: white;
     height: auto;
     width: 100vw;
-    padding-top: 40rem;
+    padding-top: 10rem;
     color: black;
 }
 .footer-content{
@@ -473,7 +467,7 @@ footer{
     background: #0000a4;
     width: 100vw;
     padding: 20px;
-padding-bottom: 40px;
+    padding-bottom: 40px;
     text-align: center;
     color: yellow;
 }
@@ -597,7 +591,7 @@ display: block;
 
 .Videocards{
     width: 180rem;
-    height: 150rem;
+    height: 190rem;
     margin: 4rem;
     display: flex;
     flex-wrap: wrap;
