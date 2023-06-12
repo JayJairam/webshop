@@ -312,9 +312,6 @@ a:link {
     object-fit: contain;
 }
 
-.card--second2 img {}
-
-
 
 /*Producten Reviews */
 .Section4 {
@@ -751,6 +748,7 @@ footer {
 
     .videocard {
         flex-wrap: wrap;
+        border: none;
     }
 
     .Herosection--button {
@@ -763,6 +761,11 @@ footer {
         position: absolute;
         top: 58%;
         left: 7%;
+    }
+
+    .cards{
+        gap: 4rem;
+        height: 129rem;
     }
 
     .card--second {
@@ -857,6 +860,6 @@ footer {
 
 
     .footer--productpagina{
-        padding-top: 570rem;
+        padding-top: 562rem;
     }
 }
