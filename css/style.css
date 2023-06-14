@@ -284,7 +284,6 @@ a:link {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: dashed black;
 }
 
 .card--first2>p {
@@ -657,6 +656,7 @@ footer {
     position: relative;
     display: inline-block;
     margin-left: 5rem;
+    margin-top: 7rem;
 }
 
 /* Dropdown Content (Hidden by Default) */
