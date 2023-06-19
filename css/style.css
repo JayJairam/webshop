@@ -601,7 +601,7 @@ footer {
 .videocard {
     width: 40rem;
     height: 63rem;
-    border: solid black;
+    border: solid rgb(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -763,7 +763,7 @@ footer {
         left: 7%;
     }
 
-    .cards{
+    .cards {
         gap: 4rem;
         height: 129rem;
     }
@@ -788,7 +788,7 @@ footer {
         height: 42%;
     }
 
-    .card-main{
+    .card-main {
         height: 34rem;
         width: 18rem;
     }
@@ -799,67 +799,161 @@ footer {
         font-size: 1rem;
     }
 
-    .card--third{
+    .card--third {
         grid-column: 1/ 4;
         grid-row: 7 / 11;
     }
 
-    .card--fourth{
+    .card--fourth {
         grid-column: 6 / 9;
         grid-row: 7 / 14;
     }
 
-    .card--fith{
+    .card--fith {
         grid-column: 1 / 10;
         grid-row: 11 / 13;
     }
 
-    .card--six{
+    .card--six {
         grid-column: 6 / 13;
         grid-row: 11 / 14;
     }
-    
+
     .Section2 {
         height: 218rem;
     }
 
 
-    .card--first2{
+    .card--first2 {
         font-size: 1.3rem;
     }
 
 
-    .buy--button{
+    .buy--button {
         width: 18rem;
         height: 7rem;
     }
 
-    .card--second2 img{
+    .card--second2 img {
         width: 70%;
         height: 30%;
     }
 
 
-    .card--second2{
+    .card--second2 {
         grid-row: 1 / 4;
         grid-column: 4 / 8;
     }
 
-    .review{
+    .review {
         height: 38rem;
     }
 
-    .reviewimg{
+    .reviewimg {
         height: 10rem;
         width: 10rem;
     }
 
-    .footer-content img{
+    .footer-content img {
         width: 100%;
     }
 
 
-    .footer--productpagina{
+    .footer--productpagina {
         padding-top: 562rem;
     }
+
+    .winkelwagen--items{
+        height: 120rem;
+    }
+
+    .winkelwagen--item{
+        width: 89%;
+        height: 30rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .scheiding{
+        margin-top: 20rem;
+    }
+
+
+}
+
+
+
+/*winkelwagenpagina*/
+
+.winkelwagen--items{
+    width: 97%;
+    background: white;
+    margin: 3rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    margin-top: 6rem;
+}
+
+.winkelwagen--item{
+    width: 70%;
+    height: 30rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.winkelwagen--item:hover{
+    cursor: pointer;
+}
+
+.img--winkelwagen{
+    width: 16rem;
+    height: 16rem;
+}
+
+
+.scheiding{
+    background: #0000a4;
+    width: 100%;
+    height: 20rem;
+}
+
+.prijs{
+    margin-right: 6rem;
+}
+
+.totaal{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5rem;
+    font-size: 1.6rem;
+    padding: 6rem;
+    width: 160rem;
+}
+
+.totaal > h3{
+    margin-right: 10rem;
+}
+
+.winkelwagen--button{
+    margin-right: 91.5rem;
+    background: #0000a4;
+    width: 13rem;
+    height: 5rem;
+    border: none;
+    color: white;
+}
+
+.winkelwagen--button:hover{
+    cursor: pointer;
 }
