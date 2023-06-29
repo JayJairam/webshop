@@ -77,7 +77,7 @@ a:link {
 
 .Herosection--button {
     position: absolute;
-    top: 45%;
+    top: 23%;
     left: 20%;
 }
 
@@ -89,7 +89,7 @@ a:link {
 .slogan {
     font-size: 3rem;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 20%;
 }
 
@@ -723,6 +723,10 @@ footer {
     }
 }
 
+@media  screen and (max-width:1775px) {
+    
+}
+
 
 @media screen and (max-width:450px) {
     .headertext {
@@ -753,13 +757,13 @@ footer {
 
     .Herosection--button {
         position: absolute;
-        top: 65%;
+        top: 32%;
         left: 6%;
     }
 
     .slogan {
         position: absolute;
-        top: 58%;
+        top: 42%;
         left: 7%;
     }
 
@@ -956,4 +960,106 @@ footer {
 
 .winkelwagen--button:hover{
     cursor: pointer;
+}
+
+
+
+/* productpagina*/ 
+
+.card--productenpagina{
+    width: 96%;
+    padding: 4rem;
+    margin: 4rem;
+    height: 143rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--productenpagina > li{
+    width: 86rem;
+    height: 62rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.img--productenpagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img--productenpagina img{
+    width: 53rem;
+    height: 47rem;
+}
+
+.info--producten{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    font-size: 5rem;
+    padding: 3rem;
+    padding-bottom: 18rem;
+    position: relative;
+}   
+
+.info--producten img{
+    position: absolute;
+    top: 4%;
+    left: 80%;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+}
+
+.article--productenpagina{
+    margin-right: 88rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 2rem;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.article--productenpagina button{
+    width: 16rem;
+    height: 6rem;
+    background: #0000a4;
+    color: white;
+    border: none;
+}
+
+.colors{
+    width: 34rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.color{
+    width: 10rem;
+    height: 9rem;;
+    border-radius: 50%;
+}
+
+.color--blue{
+    background: blue;
+}
+
+.color--red{
+    background: red;
+}
+
+.color--green{
+    background: green;
 }
