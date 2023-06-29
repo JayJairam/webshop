@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <script src="js/model.js" defer></script>
+    <title>Pcpartsgo</title>
 </head>
+
 
 <body>
     <header class="header">
@@ -22,17 +24,21 @@
         </div>
     </header>
 
+    <article class="modal a-popup" id="js--shoppingModal">
+        &#10003;Added to cart
+    </article>
+
     <ul class="card--productenpagina">
         <li class="img--productenpagina">
             <img src="img/Nvidia/gpu1.webp" alt="">
         </li>
         <li class="info--producten">
             <h2>Nvidea Rtx3060 Ventus 12gb</h2>
-            <img src="img/winkelwagen.webp" alt="">
+            <a href="winkelwagen.html"><img src="img/winkelwagen.webp" alt=""></a>
             <div class="colors">
-                <div class="color color--blue"></div>
-                <div class="color color--red"></div>
-                <div class="color color--green"></div>
+                <a href="productenpagina--blue.html"><div class="color color--blue"></div></a>
+                <a href="productenpagina--pink.html"> <div class="color color--red"></div> </a>
+                <a href="productenpagina--rood.html"> <div class="color color--green"></div></a>
             </div>
             <H2>€550</H2>
         </li>
@@ -47,7 +53,7 @@
                 Met het vertrouwde dubbele ventilatorontwerp toont de nieuwe VENTUS trots zijn scherpe lijnen in
                 neutrale kleuren die passen bij elke build.
             </p>
-            <button>Add to cart</button>
+            <button class="voegtoeaanwinkelmandje">Add to cart</button>
         </li>
     </ul>
 

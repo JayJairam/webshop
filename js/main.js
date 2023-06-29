@@ -41,4 +41,5 @@ readMoreBtn.addEventListener("click", (e) => {
 });
 
 
+//Popup modal
 

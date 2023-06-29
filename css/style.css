@@ -627,6 +627,19 @@ footer {
     border: none;
 }
 
+.videocard>a {
+    width: 6rem;
+    height: 2rem;
+    width: 13rem;
+    height: 4rem;
+    background: #0000a4;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .videocard>p {
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -723,9 +736,240 @@ footer {
     }
 }
 
-@media  screen and (max-width:1775px) {
-    
+@media screen and (max-width:1492px) {
+    .imgshowcase {
+        width: 21rem;
+        height: 18rem;
+        padding: 1rem;
+    }
+
 }
+
+@media (max-width:1308px) {
+    .totaal{
+        width: 142rem;
+        gap: 4rem;
+    }
+}
+
+@media (max-width:1888px) {
+    .card--productenpagina{
+        height: 273rem;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .card--second2 img {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+@media screen and (max-width:1850px) {
+    .Videocards {
+        width: 160rem;
+    }
+
+    .footer--footer {
+        padding-top: 81rem;
+    }
+}
+
+@media screen and (max-width:1570px) {
+    .Videocards {
+        width: 88rem;
+    }
+
+    .footer--footer {
+        padding-top: 215rem;
+    }
+}
+
+
+@media screen and (max-width:1901px) {
+    .Section2 {
+        height: 100rem;
+    }
+}
+
+@media screen and (max-width:956px) {
+    .Section2 {
+        height: 197rem;
+    }
+}
+
+
+@media screen and (max-width:886px) {
+    .card--second {
+        padding: 1rem;
+        gap: 4rem;
+    }
+
+    .headertext {
+        font-size: 1.5rem;
+    }
+
+    .card--first {
+        display: none;
+    }
+
+    .card--second {
+        font-size: 1.5rem;
+        width: 20rem
+    }
+
+    .Videocards {
+        flex-direction: column;
+        gap: 1rem;
+        width: 43rem;
+        display: block;
+
+    }
+
+    .footer--footer {
+        padding-top: 561rem;
+    }
+
+    .videocard {
+        flex-wrap: wrap;
+        border: none;
+    }
+
+    .Herosection--button {
+        position: absolute;
+        top: 32%;
+        left: 6%;
+    }
+
+    .slogan {
+        position: absolute;
+        top: 42%;
+        left: 7%;
+    }
+
+    .cards {
+        gap: 4rem;
+        height: 129rem;
+    }
+
+    .card--second {
+        font-size: 1.2rem;
+        width: 40rem;
+    }
+
+    .card--first {
+        display: none;
+    }
+
+
+    .card--second {
+        grid-column: 1/12;
+        height: 50rem;
+    }
+
+    .cards img {
+        width: 121%;
+        height: 42%;
+    }
+
+    .card-main {
+        height: 34rem;
+        width: 18rem;
+    }
+
+    .card-main>a {
+        width: 78%;
+        height: 12%;
+        font-size: 1rem;
+    }
+
+    .card--third {
+        grid-column: 1/ 4;
+        grid-row: 7 / 11;
+    }
+
+    .card--fourth {
+        grid-column: 6 / 9;
+        grid-row: 7 / 14;
+    }
+
+    .card--fith {
+        grid-column: 1 / 10;
+        grid-row: 11 / 13;
+    }
+
+    .card--six {
+        grid-column: 6 / 13;
+        grid-row: 11 / 14;
+    }
+
+    .Section2 {
+        height: 218rem;
+    }
+
+
+    .card--first2 {
+        font-size: 1.3rem;
+    }
+
+
+    .buy--button {
+        width: 18rem;
+        height: 7rem;
+    }
+
+    .card--second2 img {
+        width: 70%;
+        height: 30%;
+    }
+
+
+    .card--second2 {
+        grid-row: 1 / 4;
+        grid-column: 4 / 8;
+    }
+
+    .review {
+        height: 38rem;
+    }
+
+    .reviewimg {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .footer-content img {
+        width: 100%;
+    }
+
+
+    .footer--productpagina {
+        padding-top: 562rem;
+    }
+
+    .winkelwagen--items {
+        height: 120rem;
+    }
+
+    .winkelwagen--item {
+        width: 89%;
+        height: 30rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .scheiding {
+        margin-top: 20rem;
+    }
+
+    .winkelwagen--items {
+        margin-top: 14rem;
+    }
+}
+
+
 
 
 @media screen and (max-width:450px) {
@@ -867,11 +1111,11 @@ footer {
         padding-top: 562rem;
     }
 
-    .winkelwagen--items{
+    .winkelwagen--items {
         height: 120rem;
     }
 
-    .winkelwagen--item{
+    .winkelwagen--item {
         width: 89%;
         height: 30rem;
         flex-wrap: wrap;
@@ -879,7 +1123,7 @@ footer {
 
     }
 
-    .scheiding{
+    .scheiding {
         margin-top: 20rem;
     }
 
@@ -890,7 +1134,7 @@ footer {
 
 /*winkelwagenpagina*/
 
-.winkelwagen--items{
+.winkelwagen--items {
     width: 97%;
     background: white;
     margin: 3rem;
@@ -903,7 +1147,7 @@ footer {
     margin-top: 6rem;
 }
 
-.winkelwagen--item{
+.winkelwagen--item {
     width: 70%;
     height: 30rem;
     padding: 2rem;
@@ -915,27 +1159,27 @@ footer {
     box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.winkelwagen--item:hover{
+.winkelwagen--item:hover {
     cursor: pointer;
 }
 
-.img--winkelwagen{
+.img--winkelwagen {
     width: 16rem;
     height: 16rem;
 }
 
 
-.scheiding{
+.scheiding {
     background: #0000a4;
     width: 100%;
     height: 20rem;
 }
 
-.prijs{
+.prijs {
     margin-right: 6rem;
 }
 
-.totaal{
+.totaal {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -945,11 +1189,11 @@ footer {
     width: 160rem;
 }
 
-.totaal > h3{
+.totaal>h3 {
     margin-right: 10rem;
 }
 
-.winkelwagen--button{
+.winkelwagen--button {
     margin-right: 91.5rem;
     background: #0000a4;
     width: 13rem;
@@ -958,15 +1202,15 @@ footer {
     color: white;
 }
 
-.winkelwagen--button:hover{
+.winkelwagen--button:hover {
     cursor: pointer;
 }
 
 
 
-/* productpagina*/ 
+/* productpagina*/
 
-.card--productenpagina{
+.card--productenpagina {
     width: 96%;
     padding: 4rem;
     margin: 4rem;
@@ -980,46 +1224,46 @@ footer {
     box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.card--productenpagina > li{
+.card--productenpagina>li {
     width: 86rem;
     height: 62rem;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.img--productenpagina{
+.img--productenpagina {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img--productenpagina img{
+.img--productenpagina img {
     width: 53rem;
     height: 47rem;
 }
 
-.info--producten{
+.info--producten {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 5rem;
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 3rem;
     padding-bottom: 18rem;
     position: relative;
-}   
+}
 
-.info--producten img{
+.info--producten img {
     position: absolute;
-    top: 4%;
-    left: 80%;
+    top: 2%;
+    left: 85%;
     width: 13rem;
     height: 13rem;
     border-radius: 50%;
 }
 
-.article--productenpagina{
+.article--productenpagina {
     margin-right: 88rem;
     display: flex;
     flex-direction: column;
@@ -1029,7 +1273,7 @@ footer {
     padding: 4rem;
 }
 
-.article--productenpagina button{
+.article--productenpagina button {
     width: 16rem;
     height: 6rem;
     background: #0000a4;
@@ -1037,7 +1281,7 @@ footer {
     border: none;
 }
 
-.colors{
+.colors {
     width: 34rem;
     height: 13rem;
     display: flex;
@@ -1046,20 +1290,59 @@ footer {
     gap: 3rem;
 }
 
-.color{
+.color {
     width: 10rem;
-    height: 9rem;;
+    height: 9rem;
+    ;
     border-radius: 50%;
 }
 
-.color--blue{
-    background: blue;
+.color--blue {
+    background: #45CFDD;
 }
 
-.color--red{
-    background: red;
+.color--red {
+    background: #FCAEAE;
 }
 
-.color--green{
-    background: green;
+.color--green {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(199, 0, 0, 1) 72%, rgba(255, 0, 0, 1) 100%);
+}
+
+.modal{
+    width: 50rem;
+    height: 30rem;
+    background: #f6f6f6;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    left:70rem;
+    box-shadow: 0 0 5rem 0 rgb(0, 0, 0, 0.3);
+    color: #0000a4;
+    font-size: 300%;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    display: none;
+    z-index: 1;
+}
+
+.a-popup{
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popup {
+    from{
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
